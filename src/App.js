@@ -1,23 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React, { useEffect } from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
+import Header from "./components/Header";
+import SideBar from "./components/SideBar";
+import Applications from "./pages/Applications";
+import DataContextProvider from "./context/DataContext";
+import userData from "./dummyData";
 
 function App() {
+  const [data, dispatch] = DataContextProvider();
+  useEffect(() => {
+    dispatch({
+      type: "ADD_DATA",
+      data: userData,
+    });
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <div className="main_content">
+        <div className="left">
+          <SideBar />
+        </div>
+        <div className="right">
+          <Router>
+            <Routes>
+              <Route exact path="/applications" element={<Applications />} />
+              <Route exact path="/application" element={<Applications />} />
+              <Route path="/" element={<Navigate to="/applications" />} />
+            </Routes>
+          </Router>
+        </div>
+      </div>
     </div>
   );
 }

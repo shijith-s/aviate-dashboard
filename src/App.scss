@@ -24,11 +24,11 @@
   justify-content: stretch;
   align-items: stretch;
   height: auto;
+  .left {
+    flex: 1.5;
+    background-color: green;
+  }
+  .right {
+    flex: 8.5;
+  }
 }
-.main_content .left {
-  flex: 1.5;
-  background-color: green;
-}
-.main_content .right {
-  flex: 8.5;
-}/*# sourceMappingURL=App.css.map */
