@@ -18,6 +18,7 @@
   padding: 5px 0;
 }
 .applicationCard .jobInfo .jobTitle {
+  font-size: 16px;
   margin: 0;
 }
 .applicationCard .applicationCard_right {
@@ -26,8 +27,11 @@
 }
 .applicationCard .applicationCard_right .status {
   padding: 5px 15px;
+  width: 60px;
+  text-align: center;
   color: white;
   margin: 0 20px;
+  font-size: 14px;
   border-radius: 8px;
 }
 .applicationCard .applicationCard_right .green {

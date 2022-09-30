@@ -1,0 +1,55 @@
+@import "./variables";
+
+.application {
+  padding: 10px;
+  .backButton {
+    @include icon(40px, 0);
+    float: left;
+  }
+  .application_titleBar {
+    margin: 0;
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px 40px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  .application_body {
+    margin: 20px 0;
+
+    .buttons {
+      button {
+        background-color: $inactiveGrey;
+        padding: 10px 20px;
+        border: none;
+        outline: none;
+        border-radius: 10px 10px 0 0;
+        font-weight: 500;
+        cursor: pointer;
+      }
+      .active {
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        position: relative;
+        background-color: white;
+        z-index: 10;
+        &::after {
+          display: block;
+          content: "";
+          width: 100%;
+          height: 10px;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          background-color: white;
+        }
+      }
+    }
+    .content {
+      background-color: white;
+      border-radius: 8px;
+      border-top-left-radius: 0;
+      padding: 10px 40px;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      z-index: 10;
+    }
+  }
+}

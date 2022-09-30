@@ -29,10 +29,10 @@ const userData = {
       },
       {
         _id: "kjdfjhdfhdu2834762",
-        company_name: "Aviate",
+        company_name: "GHub",
         company_info:
           "kjhfhdufhuhnnkjhduasdijadmmdluduif mfjdhfuf hdiashdu hdasd",
-        job_title: "Frontend Developer",
+        job_title: "Full Stack Developer",
         job_desc: "dkdhf hdjfhdsjf adyujfj",
         application_status: "rejected",
         application_journey: [
@@ -48,10 +48,10 @@ const userData = {
       },
       {
         _id: "kjdfjhdfhdu2834762",
-        company_name: "Aviate",
+        company_name: "Reddy Cement",
         company_info:
           "kjhfhdufhuhnnkjhduasdijadmmdluduif mfjdhfuf hdiashdu hdasd",
-        job_title: "Frontend Developer",
+        job_title: "Concrete Engineer",
         job_desc: "dkdhf hdjfhdsjf adyujfj",
         application_status: "pending",
         application_journey: [

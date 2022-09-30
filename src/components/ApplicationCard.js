@@ -20,7 +20,7 @@ function ApplicationCard({ info }) {
   return (
     <div className="applicationCard pointer" onClick={reDirect}>
       <div className="jobInfo">
-        <h2 className="company">{info.company_name}</h2>
+        <h4 className="company">{info.company_name}</h4>
         <p className="jobTitle">{info.job_title}</p>
       </div>
 
