@@ -1,0 +1,43 @@
+.infoCard {
+  width: 250px;
+  height: 130px;
+  padding: 10px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(214, 214, 214);
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.infoCard .infoIcon {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+}
+.infoCard .infoData {
+  flex: 7.5;
+  margin: 10px;
+  text-align: right;
+}
+.infoCard .infoData .title {
+  font-size: 16px;
+}
+.infoCard .infoData .count {
+  font-size: 40px;
+  font-weight: 600;
+  margin: 2px;
+}
+
+.interviews_scheduled {
+  background-color: #6610f2;
+}
+
+.applications_sent {
+  background-color: #4885ed;
+}/*# sourceMappingURL=infoCard.css.map */

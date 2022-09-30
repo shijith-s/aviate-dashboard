@@ -1,0 +1,41 @@
+@import "./variables";
+
+.infoCard {
+  $borderRad: 8px;
+  width: 250px;
+  height: 130px;
+  padding: 10px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(214, 214, 214);
+  border-radius: $borderRad;
+  color: white;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  .infoIcon {
+    @include icon(50px, $borderRad);
+
+    border: 1px solid white;
+  }
+  .infoData {
+    flex: 7.5;
+    margin: 10px;
+    text-align: right;
+    .title {
+      font-size: 16px;
+    }
+    .count {
+      font-size: 40px;
+      font-weight: 600;
+      margin: 2px;
+    }
+  }
+}
+
+.interviews_scheduled {
+  background-color: $blue1;
+}
+.applications_sent {
+  background-color: $blue2;
+}

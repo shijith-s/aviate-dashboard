@@ -1,30 +1,124 @@
 const userData = {
-  _id: "",
-  name: "",
-  email: "",
+  _id: "22dasg6t7gdygs7s899d",
+  name: "John Doe",
+  email: "johndoe@gmail.com",
   application_data: {
-    quick_info: [
-      {
-        title: "interviews_scheduled",
-        count: 0,
-      },
-      {
-        title: "applications_sent",
-        count: 0,
-      },
-    ],
+    quick_info: {
+      interviews_scheduled: "21",
+      applications_sent: "45",
+    },
     applications: [
       {
-        _id: "",
-        company_name: "",
-        company_info: "",
-        job_title: "",
-        job_desc: "",
-        application_status: "",
+        _id: "kjdfjhdfhdu2834762",
+        company_name: "Aviate",
+        company_info:
+          "kjhfhdufhuhnnkjhduasdijadmmdluduif mfjdhfuf hdiashdu hdasd",
+        job_title: "Frontend Developer",
+        job_desc: "dkdhf hdjfhdsjf adyujfj",
+        application_status: "accepted",
         application_journey: [
           {
-            event: "",
-            schedule: "",
+            event: "Online Test",
+            schedule: "02 September 2022",
+          },
+          {
+            event: "Interview",
+            schedule: "06 September 2022",
+          },
+        ],
+      },
+      {
+        _id: "kjdfjhdfhdu2834762",
+        company_name: "Aviate",
+        company_info:
+          "kjhfhdufhuhnnkjhduasdijadmmdluduif mfjdhfuf hdiashdu hdasd",
+        job_title: "Frontend Developer",
+        job_desc: "dkdhf hdjfhdsjf adyujfj",
+        application_status: "rejected",
+        application_journey: [
+          {
+            event: "Online Test",
+            schedule: "02 September 2022",
+          },
+          {
+            event: "Interview",
+            schedule: "06 September 2022",
+          },
+        ],
+      },
+      {
+        _id: "kjdfjhdfhdu2834762",
+        company_name: "Aviate",
+        company_info:
+          "kjhfhdufhuhnnkjhduasdijadmmdluduif mfjdhfuf hdiashdu hdasd",
+        job_title: "Frontend Developer",
+        job_desc: "dkdhf hdjfhdsjf adyujfj",
+        application_status: "pending",
+        application_journey: [
+          {
+            event: "Online Test",
+            schedule: "02 September 2022",
+          },
+          {
+            event: "Interview",
+            schedule: "06 September 2022",
+          },
+        ],
+      },
+      {
+        _id: "kjdfjhdfhdu2834762",
+        company_name: "Aviate",
+        company_info:
+          "kjhfhdufhuhnnkjhduasdijadmmdluduif mfjdhfuf hdiashdu hdasd",
+        job_title: "Frontend Developer",
+        job_desc: "dkdhf hdjfhdsjf adyujfj",
+        application_status: "accepted",
+        application_journey: [
+          {
+            event: "Online Test",
+            schedule: "02 September 2022",
+          },
+          {
+            event: "Interview",
+            schedule: "06 September 2022",
+          },
+        ],
+      },
+      {
+        _id: "kjdfjhdfhdu2834762",
+        company_name: "Aviate",
+        company_info:
+          "kjhfhdufhuhnnkjhduasdijadmmdluduif mfjdhfuf hdiashdu hdasd",
+        job_title: "Frontend Developer",
+        job_desc: "dkdhf hdjfhdsjf adyujfj",
+        application_status: "rejected",
+        application_journey: [
+          {
+            event: "Online Test",
+            schedule: "02 September 2022",
+          },
+          {
+            event: "Interview",
+            schedule: "06 September 2022",
+          },
+        ],
+      },
+      {
+        _id: "kjdfjhdfhdu2834762",
+        company_name: "Aviate",
+        company_info:
+          "kjhfhdufhuhnnkjhduasdijadmmdluduif mfjdhfuf hdiashdu hdasd",
+        job_title: "Frontend Developer",
+        job_desc: "dkdhf hdjfhdsjf adyujfj",
+        application_status: "pending",
+        application_journey: [
+          {
+            event: "Online Test",
+            schedule: "02 September 2022",
+          },
+          {
+            event: "Interview",
+            schedule: "06 September 2022",
           },
         ],
       },

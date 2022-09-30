@@ -1,1 +1,18 @@
-$color1: #40189d;
+$purple1: #40189d;
+$blue1: #6610f2;
+$blue2: #4885ed;
+$bgGrey: #eee;
+$green1: #20c997;
+$red1: #dc3545;
+$yellow1: #ffc107;
+
+$headerHeight: 40px;
+
+@mixin icon($diam: 30px, $brad: 100%) {
+  width: $diam;
+  height: $diam;
+  border-radius: $brad;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

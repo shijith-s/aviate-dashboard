@@ -1,0 +1,41 @@
+.applicationCard {
+  width: auto;
+  height: 70px;
+  background-color: white;
+  margin: 10px auto;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.applicationCard:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.applicationCard .jobInfo .company {
+  margin: 0;
+  padding: 5px 0;
+}
+.applicationCard .jobInfo .jobTitle {
+  margin: 0;
+}
+.applicationCard .applicationCard_right {
+  display: flex;
+  align-items: center;
+}
+.applicationCard .applicationCard_right .status {
+  padding: 5px 15px;
+  color: white;
+  margin: 0 20px;
+  border-radius: 8px;
+}
+.applicationCard .applicationCard_right .green {
+  background-color: #20c997;
+}
+.applicationCard .applicationCard_right .red {
+  background-color: #dc3545;
+}
+.applicationCard .applicationCard_right .yellow {
+  background-color: #ffc107;
+}/*# sourceMappingURL=applicationCard.css.map */

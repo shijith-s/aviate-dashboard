@@ -1,19 +1,22 @@
+@import "./variables";
+
 .header {
   width: auto;
-  background-color: yellow;
+  background-color: $purple1;
   position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: white;
   padding: 5px 10px;
-  height: 40px;
+  height: $headerHeight;
+  z-index: 10;
   .profile {
     .icon {
-      $diam: 36px;
-      width: $diam;
-      height: $diam;
-      background-color: red;
-      border-radius: 100%;
+      @include icon(36px);
+      background-color: $blue2;
+      // border: 1px solid white;
     }
   }
 }

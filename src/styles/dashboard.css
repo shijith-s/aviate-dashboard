@@ -1,0 +1,8 @@
+.dashboard {
+  padding: 10px 20px;
+}
+.dashboard .info_cards {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}/*# sourceMappingURL=dashboard.css.map */

@@ -8,9 +8,11 @@ import {
 } from "react-router-dom";
 import Header from "./components/Header";
 import SideBar from "./components/SideBar";
-import Applications from "./pages/Applications";
+import Dashboard from "./pages/Dashboard";
+import Application from "./pages/Application";
 import DataContextProvider from "./context/DataContext";
 import userData from "./dummyData";
+import { isEmpty } from "./utils/functions";
 
 function App() {
   const [data, dispatch] = DataContextProvider();
@@ -21,19 +23,26 @@ function App() {
     });
   }, []);
 
+  if (isEmpty(data)) {
+    console.log("no data");
+    return <h2>Loading...</h2>;
+  }
+
   return (
     <div className="App">
       <Header />
       <div className="main_content">
         <div className="left">
-          <SideBar />
+          <div className="sidebar_wrapper">
+            <SideBar />
+          </div>
         </div>
         <div className="right">
           <Router>
             <Routes>
-              <Route exact path="/applications" element={<Applications />} />
-              <Route exact path="/application" element={<Applications />} />
-              <Route path="/" element={<Navigate to="/applications" />} />
+              <Route exact path="/application" element={<Application />} />
+              <Route exact path="/dashboard" element={<Dashboard />} />
+              <Route path="/" element={<Navigate to="/dashboard" />} />
             </Routes>
           </Router>
         </div>

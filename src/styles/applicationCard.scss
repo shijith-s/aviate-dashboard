@@ -1,0 +1,47 @@
+@import "./variables";
+
+.applicationCard {
+  $borderRad: 8px;
+  width: auto;
+  height: 70px;
+  background-color: white;
+  margin: 10px auto;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: $borderRad;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  }
+  .jobInfo {
+    .company {
+      margin: 0;
+      padding: 5px 0;
+    }
+    .jobTitle {
+      margin: 0;
+    }
+  }
+  .applicationCard_right {
+    display: flex;
+    align-items: center;
+    .status {
+      padding: 5px 15px;
+      color: white;
+      margin: 0 20px;
+      // background-color: grey;
+      border-radius: $borderRad;
+    }
+    .green {
+      background-color: $green1;
+    }
+    .red {
+      background-color: $red1;
+    }
+    .yellow {
+      background-color: $yellow1;
+    }
+  }
+}

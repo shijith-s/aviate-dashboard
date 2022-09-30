@@ -1,0 +1,11 @@
+@import "./variables";
+
+.dashboard {
+  padding: 10px 20px;
+  // height: fit-content;
+  .info_cards {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+}

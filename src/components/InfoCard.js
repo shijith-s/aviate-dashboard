@@ -1,9 +1,17 @@
-import React from 'react'
+import React from "react";
+import "../styles/infoCard.css";
 
-function InfoCard() {
+function InfoCard({ item, count }) {
+  console.log(item, count);
   return (
-    <div>InfoCard</div>
-  )
+    <div className={`infoCard ${item.className}`}>
+      <div className="infoIcon">{item.icon}</div>
+      <div className="infoData">
+        <h4 className="title">{item.title}</h4>
+        <p className="count">{count}</p>
+      </div>
+    </div>
+  );
 }
 
-export default InfoCard
+export default InfoCard;

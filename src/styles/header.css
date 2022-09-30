@@ -1,17 +1,23 @@
 .header {
   width: auto;
-  background-color: yellow;
+  background-color: #40189d;
   position: -webkit-sticky;
   position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: white;
   padding: 5px 10px;
   height: 40px;
+  z-index: 10;
 }
 .header .profile .icon {
   width: 36px;
   height: 36px;
-  background-color: red;
   border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4885ed;
 }/*# sourceMappingURL=header.css.map */
