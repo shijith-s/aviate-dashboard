@@ -3,15 +3,12 @@
 .header {
   width: auto;
   background-color: $purple1;
-  position: sticky;
-  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: white;
-  padding: 5px 10px;
-  height: $headerHeight;
-  z-index: 10;
+  padding: 0 20px;
+  height: 100%;
   .profile {
     .icon {
       @include icon(36px);

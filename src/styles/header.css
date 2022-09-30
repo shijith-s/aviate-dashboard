@@ -1,16 +1,12 @@
 .header {
   width: auto;
   background-color: #40189d;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: white;
-  padding: 5px 10px;
-  height: 40px;
-  z-index: 10;
+  padding: 0 20px;
+  height: 100%;
 }
 .header .profile .icon {
   width: 36px;

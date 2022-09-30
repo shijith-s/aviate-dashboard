@@ -30,22 +30,21 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      <div className="header_wrapper">
+        <Header />
+      </div>
+
+      <div className="sidebar_wrapper">
+        <SideBar />
+      </div>
       <div className="main_content">
-        <div className="left">
-          <div className="sidebar_wrapper">
-            <SideBar />
-          </div>
-        </div>
-        <div className="right">
-          <Router>
-            <Routes>
-              <Route exact path="/application" element={<Application />} />
-              <Route exact path="/dashboard" element={<Dashboard />} />
-              <Route path="/" element={<Navigate to="/dashboard" />} />
-            </Routes>
-          </Router>
-        </div>
+        <Router>
+          <Routes>
+            <Route exact path="/application" element={<Application />} />
+            <Route exact path="/dashboard" element={<Dashboard />} />
+            <Route path="/" element={<Navigate to="/dashboard" />} />
+          </Routes>
+        </Router>
       </div>
     </div>
   );

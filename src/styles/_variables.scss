@@ -6,7 +6,8 @@ $green1: #20c997;
 $red1: #dc3545;
 $yellow1: #ffc107;
 
-$headerHeight: 40px;
+$headerHeight: 50px;
+$sidebarWidth: 200px;
 
 @mixin icon($diam: 30px, $brad: 100%) {
   width: $diam;
