@@ -56,8 +56,8 @@
 }
 .recommended_jobs .jobCard .jobCard_details {
   display: flex;
-  justify-content: space-between;
   margin: 5px 0;
+  justify-content: space-between;
 }
 .recommended_jobs .jobCard .jobCard_details p {
   padding: 0;
