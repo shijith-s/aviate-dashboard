@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/applicationCard.css";
-import { capitalize } from "../utils/functions";
+import { capitalize } from "../utils/utils";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import { useNavigate } from "react-router";
 

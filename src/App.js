@@ -12,7 +12,7 @@ import Dashboard from "./pages/Dashboard";
 import Application from "./pages/Application";
 import DataContextProvider from "./context/DataContext";
 import userData from "./dummyData";
-import { isEmpty } from "./utils/functions";
+import { isEmpty } from "./utils/utils";
 
 function App() {
   const [data, dispatch] = DataContextProvider();
@@ -21,6 +21,11 @@ function App() {
       type: "ADD_DATA",
       data: userData,
     });
+    return () => {
+      dispatch({
+        type: "REMOVE_DATA",
+      });
+    };
   }, []);
 
   if (isEmpty(data)) {
@@ -31,7 +36,7 @@ function App() {
   return (
     <div className="App">
       <div className="header_wrapper">
-        <Header />
+        <Header data={data} />
       </div>
 
       <div className="sidebar_wrapper">

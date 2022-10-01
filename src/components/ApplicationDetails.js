@@ -2,6 +2,7 @@ import React from "react";
 import rejectionImg from "../assets/rejection.jpg";
 import pendingImg from "../assets/pending.jpg";
 import "../styles/applicationDetails.css";
+import ApplicationJourney from "./ApplicationJourney";
 
 function ApplicationDetails({ data }) {
   console.log(data);
@@ -13,8 +14,7 @@ function ApplicationDetails({ data }) {
       case "pending":
         return <Pending />;
       default:
-        //   <Acceptance />;
-        return "acceptance";
+        return <ApplicationJourney data={data.application_journey} />;
     }
   };
 
@@ -35,7 +35,7 @@ const Rejection = () => {
         Sorry, your application has not been accepted this time
       </p>
       <div className="image">
-        <img src={rejectionImg} alt="comforting" />
+        <img src={rejectionImg} alt="comforting" width="450px" height="300px" />
       </div>
     </div>
   );
@@ -46,7 +46,7 @@ const Pending = () => {
     <div className="pending">
       <p className="sentence">Your application is still on progress</p>
       <div className="image">
-        <img src={pendingImg} alt="sand clock" />
+        <img src={pendingImg} alt="sand clock" width="450px" height="300px" />
       </div>
     </div>
   );

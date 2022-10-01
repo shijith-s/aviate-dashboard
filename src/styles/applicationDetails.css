@@ -8,7 +8,8 @@
 }
 .rejection .image,
 .pending .image {
-  width: 550px;
+  height: 300px;
+  width: auto;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -16,4 +17,33 @@
 .pending .image img {
   width: 100%;
   height: 100%;
+}
+
+.vertical-timeline-element-content {
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25), 0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+  padding: 2em 3em !important;
+}
+
+.timeline_icon {
+  width: 45px;
+  height: 45px;
+  overflow: hidden;
+}
+.timeline_icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.journeyStart, .journeyEnd {
+  background-color: #4cb32b;
+  color: white;
+  padding: 20px 30px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 4px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 10px auto;
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25), 0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15);
 }/*# sourceMappingURL=applicationDetails.css.map */

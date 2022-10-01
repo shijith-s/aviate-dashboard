@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
 
-function JobDescription() {
+function JobDescription({ data }) {
   return (
-    <div>JobDescription</div>
-  )
+    <div>
+      <h2>Job Description</h2>
+      <p>{data}</p>
+    </div>
+  );
 }
 
-export default JobDescription
+export default JobDescription;

@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
 
-function CompanyInfo() {
+function CompanyInfo({ data }) {
   return (
-    <div>CompanyInfo</div>
-  )
+    <div>
+      <h2>About Company</h2>
+      <p>{data}</p>
+    </div>
+  );
 }
 
-export default CompanyInfo
+export default CompanyInfo;

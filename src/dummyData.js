@@ -12,115 +12,193 @@ const userData = {
         _id: "kjdfjhdfhdu2834762",
         company_name: "Aviate",
         company_info:
-          "kjhfhdufhuhnnkjhduasdijadmmdluduif mfjdhfuf hdiashdu hdasd",
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         job_title: "Frontend Developer",
-        job_desc: "dkdhf hdjfhdsjf adyujfj",
+        job_desc:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         application_status: "accepted",
-        application_journey: [
-          {
-            event: "Online Test",
-            schedule: "02 September 2022",
+        application_journey: {
+          onlineTest: {
+            required: true,
+            status: "completed",
+            schedule: "02 september 2022",
           },
-          {
-            event: "Interview",
-            schedule: "06 September 2022",
+          assignment: {
+            required: true,
+            status: "scheduled",
+            schedule: "06 september 2022",
           },
-        ],
+          interview: {
+            required: true,
+            status: "upcoming",
+            schedule: "",
+          },
+          orientation: {
+            required: true,
+            status: "upcoming",
+            schedule: "",
+          },
+        },
       },
       {
         _id: "kjdfjhdfhdu2834762",
         company_name: "GHub",
         company_info:
-          "kjhfhdufhuhnnkjhduasdijadmmdluduif mfjdhfuf hdiashdu hdasd",
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         job_title: "Full Stack Developer",
-        job_desc: "dkdhf hdjfhdsjf adyujfj",
+        job_desc:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         application_status: "rejected",
-        application_journey: [
-          {
-            event: "Online Test",
-            schedule: "02 September 2022",
+        application_journey: {
+          onlineTest: {
+            required: true,
+            status: "completed",
+            schedule: "21 October 2022",
           },
-          {
-            event: "Interview",
-            schedule: "06 September 2022",
+          assignment: {
+            required: true,
+            status: "completed",
+            schedule: "23 October 2022",
           },
-        ],
+          interview: {
+            required: true,
+            status: "scheduled",
+            schedule: "26 october 2022",
+          },
+          orientation: {
+            required: true,
+            status: "upcoming",
+            schedule: "",
+          },
+        },
       },
       {
         _id: "kjdfjhdfhdu2834762",
         company_name: "Reddy Cement",
         company_info:
-          "kjhfhdufhuhnnkjhduasdijadmmdluduif mfjdhfuf hdiashdu hdasd",
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         job_title: "Concrete Engineer",
-        job_desc: "dkdhf hdjfhdsjf adyujfj",
+        job_desc:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         application_status: "pending",
-        application_journey: [
-          {
-            event: "Online Test",
-            schedule: "02 September 2022",
+        application_journey: {
+          onlineTest: {
+            required: false,
+            status: "completed",
+            schedule: "21 October 2022",
           },
-          {
-            event: "Interview",
-            schedule: "06 September 2022",
+          assignment: {
+            required: true,
+            status: "completed",
+            schedule: "23 October 2022",
           },
-        ],
+          interview: {
+            required: true,
+            status: "scheduled",
+            schedule: "26 october 2022",
+          },
+          orientation: {
+            required: true,
+            status: "upcoming",
+            schedule: "",
+          },
+        },
       },
       {
         _id: "kjdfjhdfhdu2834762",
         company_name: "Aviate",
         company_info:
-          "kjhfhdufhuhnnkjhduasdijadmmdluduif mfjdhfuf hdiashdu hdasd",
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         job_title: "Frontend Developer",
-        job_desc: "dkdhf hdjfhdsjf adyujfj",
+        job_desc:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         application_status: "accepted",
-        application_journey: [
-          {
-            event: "Online Test",
-            schedule: "02 September 2022",
+        application_journey: {
+          onlineTest: {
+            required: true,
+            status: "completed",
+            schedule: "02 september 2022",
           },
-          {
-            event: "Interview",
-            schedule: "06 September 2022",
+          assignment: {
+            required: true,
+            status: "completed",
+            schedule: "06 september 2022",
           },
-        ],
+          interview: {
+            required: true,
+            status: "scheduled",
+            schedule: "09 september 2022",
+          },
+          orientation: {
+            required: true,
+            status: "upcoming",
+            schedule: "",
+          },
+        },
       },
       {
         _id: "kjdfjhdfhdu2834762",
-        company_name: "Aviate",
+        company_name: "GHub",
         company_info:
-          "kjhfhdufhuhnnkjhduasdijadmmdluduif mfjdhfuf hdiashdu hdasd",
-        job_title: "Frontend Developer",
-        job_desc: "dkdhf hdjfhdsjf adyujfj",
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        job_title: "Full Stack Developer",
+        job_desc:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         application_status: "rejected",
-        application_journey: [
-          {
-            event: "Online Test",
-            schedule: "02 September 2022",
+        application_journey: {
+          onlineTest: {
+            required: true,
+            status: "completed",
+            schedule: "21 October 2022",
           },
-          {
-            event: "Interview",
-            schedule: "06 September 2022",
+          assignment: {
+            required: true,
+            status: "completed",
+            schedule: "23 October 2022",
           },
-        ],
+          interview: {
+            required: true,
+            status: "scheduled",
+            schedule: "26 october 2022",
+          },
+          orientation: {
+            required: true,
+            status: "upcoming",
+            schedule: "",
+          },
+        },
       },
       {
         _id: "kjdfjhdfhdu2834762",
-        company_name: "Aviate",
+        company_name: "Reddy Cement",
         company_info:
-          "kjhfhdufhuhnnkjhduasdijadmmdluduif mfjdhfuf hdiashdu hdasd",
-        job_title: "Frontend Developer",
-        job_desc: "dkdhf hdjfhdsjf adyujfj",
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        job_title: "Concrete Engineer",
+        job_desc:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         application_status: "pending",
-        application_journey: [
-          {
-            event: "Online Test",
-            schedule: "02 September 2022",
+        application_journey: {
+          onlineTest: {
+            required: false,
+            status: "completed",
+            schedule: "21 October 2022",
           },
-          {
-            event: "Interview",
-            schedule: "06 September 2022",
+          assignment: {
+            required: true,
+            status: "completed",
+            schedule: "23 October 2022",
           },
-        ],
+          interview: {
+            required: true,
+            status: "scheduled",
+            schedule: "26 october 2022",
+          },
+          orientation: {
+            required: true,
+            status: "upcoming",
+            schedule: "",
+          },
+        },
       },
     ],
   },

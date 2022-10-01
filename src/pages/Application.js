@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
-import { isEmpty } from "../utils/functions";
+import { isEmpty } from "../utils/utils";
 import ApplicationDetails from "../components/ApplicationDetails";
 import JobDescription from "../components/JobDescription";
 import CompanyInfo from "../components/CompanyInfo";
@@ -12,9 +12,10 @@ function Application() {
   const navigate = useNavigate();
   const info = location.state;
 
-  // useEffect(() => {
-  //   // window.scrollTo(0);
-  // }, []);
+  useEffect(() => {
+    let container = document.getElementsByClassName("main_content")[0];
+    if (container) container.scrollTo(0, 0);
+  }, []);
 
   const [currContentId, setcurrContentId] = useState(1);
 
