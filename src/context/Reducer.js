@@ -5,7 +5,8 @@ const reducer = (state, action) => {
   switch (action.type) {
     case "ADD_DATA":
       return { ...state, ...action.data };
-
+    case "ADD_RECOMMENDED_JOBS":
+      return { ...state, recommendedJobs: action.data };
     case "REMOVE_DATA":
       return {};
 

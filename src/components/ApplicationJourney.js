@@ -71,7 +71,9 @@ function ApplicationJourney({ data }) {
 
   return (
     <div>
-      <div className="journeyStart">Congrats, your application has been accepted</div>
+      <div className="journeyStart journey_active">
+        Congrats, your application has been accepted
+      </div>
       <VerticalTimeline lineColor="#6610f2">
         {timelineElements.map((element) => {
           return (
@@ -88,11 +90,16 @@ function ApplicationJourney({ data }) {
               icon={<Icon img={icons[element.name]} />}
             >
               <h3 className="timelineElement_title">{titleMaker(element)}</h3>
+              {data[element.name].status !== "upcoming" && (
+                <button className="timeline_btn pointer">Know more</button>
+              )}
             </VerticalTimelineElement>
           );
         })}
       </VerticalTimeline>
-      <div className="journeyEnd">Congrats, your application has been accepted</div>
+      <div className={`journeyEnd ${data.selected ? "journey_current" : ""}`}>
+        {data.selected ? "Congrats, you have been selected" : "Selection"}
+      </div>
     </div>
   );
 }

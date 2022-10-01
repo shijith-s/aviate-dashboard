@@ -2,10 +2,70 @@
 
 .dashboard {
   padding: 10px 20px;
-  // height: fit-content;
   .info_cards {
     display: flex;
     justify-content: start;
     align-items: center;
+  }
+}
+
+.showMoreBtn {
+  color: blue;
+  text-align: right;
+  text-decoration: underline;
+  margin-right: 10px;
+}
+
+.applications_list_shrink {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.recommended_jobs {
+  // width: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: flex;
+  flex-wrap: nowrap;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
+  .jobCard {
+    float: left;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    width: 300px;
+    height: 200px;
+    .jobCard_title {
+      margin: 5px 0;
+    }
+    .jobCard_stipend {
+      margin: 0;
+    }
+    .jobcard_desc {
+      display: -webkit-box;
+      max-width: 280px;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      margin: 8px 0;
+    }
+    .jobCard_details {
+      display: flex;
+      justify-content: space-between;
+      margin: 5px 0;
+      p {
+        padding: 0;
+        margin: 0;
+      }
+    }
+    .jobCard_applyBtn {
+      margin: auto;
+    }
   }
 }

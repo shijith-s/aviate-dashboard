@@ -12,6 +12,7 @@ import Dashboard from "./pages/Dashboard";
 import Application from "./pages/Application";
 import DataContextProvider from "./context/DataContext";
 import userData from "./dummyData";
+import { recommendedJobs } from "./dummyData";
 import { isEmpty } from "./utils/utils";
 
 function App() {
@@ -20,6 +21,10 @@ function App() {
     dispatch({
       type: "ADD_DATA",
       data: userData,
+    });
+    dispatch({
+      type: "ADD_RECOMMENDED_JOBS",
+      data: recommendedJobs,
     });
     return () => {
       dispatch({

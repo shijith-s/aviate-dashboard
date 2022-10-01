@@ -38,6 +38,7 @@ const userData = {
             status: "upcoming",
             schedule: "",
           },
+          selected: false,
         },
       },
       {
@@ -70,6 +71,7 @@ const userData = {
             status: "upcoming",
             schedule: "",
           },
+          selected: false,
         },
       },
       {
@@ -102,6 +104,7 @@ const userData = {
             status: "upcoming",
             schedule: "",
           },
+          selected: false,
         },
       },
       {
@@ -134,6 +137,7 @@ const userData = {
             status: "upcoming",
             schedule: "",
           },
+          selected: false,
         },
       },
       {
@@ -166,6 +170,7 @@ const userData = {
             status: "upcoming",
             schedule: "",
           },
+          selected: false,
         },
       },
       {
@@ -176,7 +181,7 @@ const userData = {
         job_title: "Concrete Engineer",
         job_desc:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        application_status: "pending",
+        application_status: "accepted",
         application_journey: {
           onlineTest: {
             required: false,
@@ -190,14 +195,15 @@ const userData = {
           },
           interview: {
             required: true,
-            status: "scheduled",
+            status: "completed",
             schedule: "26 october 2022",
           },
           orientation: {
             required: true,
-            status: "upcoming",
-            schedule: "",
+            status: "completed",
+            schedule: "28 october 2022",
           },
+          selected: true,
         },
       },
     ],
@@ -205,3 +211,78 @@ const userData = {
 };
 
 export default userData;
+
+export const recommendedJobs = [
+  {
+    id: "3234435",
+    company_name: "Averera",
+    stipend: "400 - 600 $",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore ",
+    location: "Delhi, India",
+    jobType: "Full-time",
+  },
+  {
+    id: "3234435",
+    company_name: "Averera",
+    stipend: "400 - 600 $",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore ",
+    location: "Delhi, India",
+    jobType: "Full-time",
+  },
+  {
+    id: "3234435",
+    company_name: "Averera",
+    stipend: "400 - 600 $",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore ",
+    location: "Delhi, India",
+    jobType: "Full-time",
+  },
+  {
+    id: "3234435",
+    company_name: "Averera",
+    stipend: "400 - 600 $",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore ",
+    location: "Delhi, India",
+    jobType: "Full-time",
+  },
+  {
+    id: "3234435",
+    company_name: "Averera",
+    stipend: "400 - 600 $",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore ",
+    location: "Delhi, India",
+    jobType: "Full-time",
+  },
+  {
+    id: "3234435",
+    company_name: "Averera",
+    stipend: "400 - 600 $",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore ",
+    location: "Delhi, India",
+    jobType: "Full-time",
+  },
+  {
+    id: "3234435",
+    company_name: "Averera",
+    stipend: "400 - 600 $",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore ",
+    location: "Delhi, India",
+    jobType: "Full-time",
+  },
+  {
+    id: "3234435",
+    company_name: "Averera",
+    stipend: "400 - 600 $",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore ",
+    location: "Delhi, India",
+    jobType: "Full-time",
+  },
+  {
+    id: "3234435",
+    company_name: "Averera",
+    stipend: "400 - 600 $",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore ",
+    location: "Delhi, India",
+    jobType: "Full-time",
+  },
+];
