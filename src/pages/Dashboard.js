@@ -80,7 +80,9 @@ const JobCard = ({ data }) => {
         <p>{data.location}</p>
         <p>{data.jobType}</p>
       </div>
-      <button className="jobCard_applyBtn">Apply Now</button>
+      <div className="jobCard_applyBtn">
+        <button className="pointer">Apply Now</button>
+      </div>
     </div>
   );
 };
